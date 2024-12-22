@@ -1,0 +1,241 @@
+/**Updated Theme: White, Grey, and Orange Accent*/
+
+/**General Setup**/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&wght@10&display=swap');
+
+/**General Special Name**/
+a.username-coloured:after, #contrib-widget a:after, #shouts-widget a:after, p.author a:after {
+    content: " ☘ "
+}
+
+a[href="/community/user/1171764"] {
+    font-size: 0px !important; /* Ensure no default text is shown */
+}
+
+a[href="/community/user/1171764"]::before {
+    content: "krisyotam" !important;
+    font-size: 15px !important;
+    color: #ff7f00; /* Orange accent */
+}
+
+
+/**Main Before Text**/
+#main::before {
+    content: "pure mathematics is, in its way, the poetry of logical ideas";
+    height: 200px;
+    width: 600px;
+    position: left;
+    border-radius: 10px;
+    border: none;
+    padding-left: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 150px;
+    background-color: #e2e2e2; /* Light grey for readability (slightly different shade) */
+    color: #1c1c1c;
+    line-height: 160px;
+    white-space: nowrap;
+    font-family: Cookie;
+    font-size: 20px !important;
+    opacity: 0.90;
+}
+
+/**Header**/
+h1 {
+    font-family: Balsamiq Sans;
+    font-size: 25px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+#header h1 {
+    font-family: Cookie;
+    color: #1c1c1c;
+    font-size: 50px;
+    padding-top: 50px;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+#header {
+    background-color: #f2f2f2; /* Lighter grey for header */
+    border: none;
+    padding-top: 20px;
+}
+
+/**Navigation Box**/
+#navigation_box { 
+    background-color: #d1d1d1; /* Light grey */
+    border-bottom: none;
+    height: 40px;
+    padding: 15px;
+}
+
+#navigation_box a {
+    font-family: Balsamiq Sans;
+    color: #1c1c1c;
+}
+
+/**Stuff for Posts**/
+div .entrywrap, div .entrywrap-hover {
+    font-family: Balsamiq Sans;
+    background-color: #e2e2e2; /* Slightly darker grey background */
+    border: none!important;
+}
+
+#side {
+    background-color: #f4f4f4; /* Very light grey */
+    font-family: Balsamiq Sans;
+    background-repeat: repeat!important;
+}
+
+#wrapper {
+    background-color: #f6f6f6; /* Slightly darker grey for the content area */
+    font-family: Balsamiq Sans;
+}
+
+/**Polls**/
+.cmty-poll-display {
+    background: #f4f4f4; /* Lighter grey for polls */
+    border: 2px;
+    font-family: Balsamiq Sans;
+    border-radius: 10px;
+}
+
+.cmty-poll-result-bar {
+    background-color: #d1d1d1;
+    padding: 10px!important;
+    border-radius: 3px;
+}
+
+/**Shouts**/
+#message.inputbox {
+    background-color:  #f6f6f6;
+    background-size: 120%;
+    color: black;
+    font-size: 15px;
+    font-family: Balsamiq Sans;
+    border: none;
+}
+
+.inputbox {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#shouts-widget > .widget-header > .widget-title {
+    font-size: 0px;
+}
+
+#shouts-widget > .widget-header > .widget-title::after {
+    content: "Shout for contrib!";
+    font-size: 13px;
+    color: #ff7f00; /* Orange accent color */
+}
+
+/**Shouts and Comments Colors**/
+.row1 {
+    background-color: #f2f2f2; /* A different grey to highlight */
+    border-radius: 10px;
+    font-family: Balsamiq Sans;
+}
+
+.row2 {
+    background-color: #e2e2e2; /* Slightly darker grey */
+    border-radius: 10px;
+    font-family: Balsamiq Sans;
+}
+
+li.row1, li.row2 {
+    padding: 5px !important;
+    border-top: 2px;
+}
+
+/**Contributors**/
+#contrib-widget > .widget-header > .widget-title {
+    font-size: 0px;
+}
+
+#contrib-widget > .widget-header > .widget-title::after {
+    content: "Contributors:";
+    font-size: 16px;
+    color: #ff7f00; /* Orange accent color */
+}
+
+/**Tags for Posts**/
+div#tags-widget {
+    font-family: Balsamiq Sans;
+    background-color: #d1d1d1;
+}
+
+.cmty-item-tag {
+    font-family: Balsamiq Sans;
+    background-color: #d1d1d1 !important;
+    color: black;
+}
+
+/**Edits Hidden**/
+.cmty-post-edited .cmty-post-edit-info {
+    display: none!important;
+}
+
+/**Link Display Hidden**/
+a:link, a:visited, a:active {
+    color: #1c1c1c;
+    text-decoration: none!important;
+}
+
+/**Quote Box (Bento Box for the Quote)**/
+.quote-box {
+    font-family: Balsamiq Sans;
+    background-color: #f2f2f2; /* Light grey background */
+    border: 2px solid #e1e1e1; /* Slightly darker grey border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Spacing around the box */
+    font-size: 18px;
+    color: #333333; /* Dark text for readability */
+}
+
+.quote-box::before {
+    content: "“"; /* Quote mark at the beginning */
+    font-size: 40px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: #ff7f00; /* Orange accent color */
+}
+
+.quote-box::after {
+    content: "”"; /* Quote mark at the end */
+    font-size: 40px;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    color: #ff7f00; /* Orange accent color */
+}
+
+/**Example for Quote Box in Use**/
+blockquote {
+    font-family: Balsamiq Sans;
+    font-size: 18px;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333333;
+    border-left: 5px solid #ff7f00; /* Orange accent on left border */
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/**Additional Styling for the Content Layout**/
+div#wrapper {
+    width: 900px;
+}
+
+#main {
+    padding-left: 15px;
+    width: 635px;
+}
